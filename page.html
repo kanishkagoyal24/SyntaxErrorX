@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <style>
+        body{
+            background-image: 
+            url('https://www.freewebheaders.com/wp-content/gallery/office-finance/cache/financial-analysis-and-accounting-charts-website-header.jpg-nggid043556-ngg0dyn-1280x720x100-00f0w010c010r110f110r010t010.jpg')
+        
+        }/* Style the form container */
+        
+        #home page {
+    text-align: center; /* Center the form elements */
+    margin: 50px auto; /* Center the form horizontally with some top margin */
+    max-width: 300px; /* Set a maximum width for the form container */
+}
+
+/* Style the labels for the form inputs */
+label {
+    display: block; /* Make labels display as block elements (one below the other) */
+    margin-bottom: 10px; /* Add some spacing between labels */
+    margin-top: 30px;
+    color:#d6e1eb;
+}
+
+/* Style the text inputs */
+#username[type="text"] {
+    width: 50%; /* Make the text inputs take the full width of their container */
+    padding: 5px; /* Add some padding for better visual appearance */
+    margin-bottom: 15px; /* Add spacing between input fields */
+}
+#password[type="password"] {
+    width: 50%; /* Make the text inputs take the full width of their container */
+    padding: 5px; /* Add some padding for better visual appearance */
+    margin-bottom: 15px; /* Add spacing between input fields */
+}
+
+/* Style the login button */
+button[type="submit"] {
+    width: 50%; /* Make the button take the full width of its container */
+    padding: 10px; /* Add some padding for better visual appearance */
+    background-color: #011f3a; /* Set the background color to blue */
+    color: #fff; /* Set the text color to white */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+   
+}
+
+/* Style the signup link */
+a {
+    display: block; /* Make the link display as a block element */
+    text-align: center; /* Center-align the link text */
+    text-decoration: none; /* Remove the underline from the link */
+    color: #dfe4e8; /* Set the link color to blue */
+    margin-top: 10px; /* Add some spacing above the link */
+}
+
+#container {
+
+            background-color: #425a74;
+               border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            position: fixed;
+                top: 100px;
+              left: 1000px;
+                 overflow: hidden;
+             width: 400px;
+              max-width: 50%;
+              min-height: 500px;
+              text-align: center;
+              
+            
+        }
+        #gs{
+            text-align: right;
+        }
+        header {
+            background-color: #04284f;
+            color: #fff;
+            padding: 10px;
+            text-align:right;
+            
+        }
+        #large-text {
+    font-size: 45px;
+    color: #ffffff;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h3><b>
+                <a href="page.html">HOME</a>
+                <a href="feature.html">FEATURES</a>
+                
+                contact:<br>
+                9836645654
+            </b>
+                </h3>
+        </header>
+        <div id="large-text">
+            <br>
+            <h1>Daily Expense <br>Tracker</h1>
+        </div>
+        <div id="container">
+            <br>
+            <br>
+            <br>
+            
+                
+            <form id="home page" onsubmit="return authenticateUser()">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+            <br>
+        </div>
+
+        <script>
+            // Define user information
+            const users = [
+                { username: "shourya", password: "1234" },
+                { username: "kanishka", password: "12345" },
+                { username: "vanshita", password: "123456" },
+                { username: "srita", password: "1234567" },
+            ];
+
+            function authenticateUser() {
+                // Get the entered username and password
+                const enteredUsername = document.getElementById("username").value;
+                const enteredPassword = document.getElementById("password").value;
+
+                // Check if the entered credentials match any user
+                const user = users.find(user => user.username === enteredUsername && user.password === enteredPassword);
+
+                if ((enteredUsername == 'shourya')&&(enteredPassword == 1234)) {
+                    // Authentication successful
+                    alert("Login successful. Redirecting...");
+                    window.location.href = "page2.html"; // Redirect to the specified page
+                }else if ((enteredUsername == 'kanishka')&&(enteredPassword == 12345)) {
+                    // Authentication successful
+                    alert("Login successful. Redirecting...");
+                    window.location.href = "page2.html";
+                }else if ((enteredUsername == 'vanshita')&&(enteredPassword == 123456)) {
+                    // Authentication successful
+                    alert("Login successful. Redirecting...");
+                    window.location.href = "page2.html";
+                }else if ((enteredUsername == 'srita')&&(enteredPassword == 1234567)) {
+                    // Authentication successful
+                    alert("Login successful. Redirecting...");
+                    window.location.href = "page2.html";
+                }else {
+                    // Authentication failed
+                    alert("Invalid username or password. Please try again.");
+                }
+
+                return false; // Prevent the form from submitting
+            }
+        </script>
+    </body>
+</html>
