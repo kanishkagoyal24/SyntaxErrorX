@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('https://www.freewebheaders.com/wp-content/gallery/office-finance/cache/financial-analysis-and-accounting-charts-website-header.jpg-nggid043556-ngg0dyn-1280x720x100-00f0w010c010r110f110r010t010.jpg');
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            border-radius: 5%;
+            height: 100%;
+        }
+
+        h1 {
+            color: #0074D9;
+            font-size: 36px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 20px;
+            cursor: pointer; /* Add cursor pointer for hover effect */
+            transition: transform 0.2s; /* Add a smooth transition */
+        }
+
+        p {
+            font-size: 16px;
+            visibility: hidden; /* Initially hidden */
+            opacity: 0;
+            transition: visibility 0s, opacity 0.2s;
+        }
+
+        h2:hover + p {
+            visibility: visible; /* Show the paragraph on hover */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Features</h1>
+
+        <h2>Statement of account</h2>
+        <p>Get transaction history for a chosen date.</p>
+
+        <h2>Weekly average</h2>
+        <p>Get the weekly average.</p>
+
+        <h2>Overview</h2>
+        <p>Get the expenditure trend over the month.</p>
+
+        <h2>Expenditure</h2>
+        <p>Money spent for different purposes.</p>
+
+        <h2>Balance</h2>
+        <p>Check your remaining balance.</p>
+    </div>
+</body>
+</html>
